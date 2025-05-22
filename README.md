@@ -48,7 +48,7 @@ Esta é a minha solução para o desafio [Huddle landing page with single introd
 
 ### Links
 
-- URL do site publicado: [Clique aqui]()
+- URL do site publicado: [Clique aqui](https://guilherme-ddiniz.github.io/Solu-o-do-desafio-da-landing-page-Huddle-com-se-o-introdut-ria-nica/)
 
 ---
 
