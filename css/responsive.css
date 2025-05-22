@@ -1,0 +1,144 @@
+@media(max-width:1325px) {
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 600px 400px;
+        grid-template-areas: "imagem informacoes";
+        column-gap: 50px;
+        margin: 0 40px 0 80px;
+    }
+}
+
+@media(max-width:1170px) {
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 550px 1fr;
+        grid-template-areas: "imagem informacoes";
+        column-gap: 50px;
+        margin: 0 40px 0 80px;
+    }
+
+    .informacoes {
+        margin: 25px 0 0 0;
+    }
+
+    .informacoes .titulo {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+    }
+
+    .informacoes a.botao {
+        padding: 13px 45px;
+    }
+
+    .rodape nav a {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:980px) {
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagem"
+            "informacoes";
+        column-gap: 50px;
+        margin: 0 40px 0 80px;
+    }
+}
+
+@media(max-width: 770px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px auto 100px;
+        grid-template-areas: "cabecalho"
+            "conteudo-principal"
+            "rodape";
+    }
+
+    .conteudo-principal{
+                margin: 0 40px 0 40px;
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+
+    .cabecalho .logo img {
+        height: 45px;
+        width: 240px;
+    }
+
+    .informacoes .titulo {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .informacoes .sobre {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .informacoes a.botao {
+        align-self: center;
+    }
+
+    .rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+}
+
+@media(max-width:530px) {
+    .conteudo-principal {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagem"
+            "informacoes";
+        column-gap: 50px;
+
+    }
+
+    .cabecalho .logo {
+        margin: 0 0 0 40px;
+    }
+
+        .cabecalho .logo img {
+        height: 45px;
+        width: 130px;
+    }
+
+        .informacoes .titulo {
+        font-size: 2rem;
+    }
+
+    .informacoes {
+        margin: -35px 0 0 0;
+    }
+
+    .informacoes .titulo{
+        text-align: center;
+    }
+
+    .informacoes .sobre {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:360px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto 100px;
+        grid-template-areas: "cabecalho"
+            "conteudo-principal"
+            "rodape";
+    }
+
+        .informacoes {
+        margin: -105px 0 0 0;
+    }
+}

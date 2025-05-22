@@ -1,0 +1,124 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --color-font: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* --------------------ORGANIZAÇÃO DO CONTEÚDO DA PÁGINA-------------------- */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px auto 100px;
+    grid-template-areas: "cabecalho"
+        "conteudo-principal"
+        "rodape";
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    min-height: 100vh;
+    color: var(--color-font);
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.conteudo-principal {
+    grid-area: conteudo-principal;
+}
+
+.rodape {
+    grid-area: rodape;
+}
+
+/* --------------------ORGANIZAÇÃO DO CABEÇALHO-------------------- */
+.cabecalho {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .logo {
+    margin: 0 0 0 80px;
+}
+
+/* --------------------ORGANIZAÇÃO DO CONTEÚDO PRINCIPAL-------------------- */
+.conteudo-principal {
+    display: grid;
+    grid-template-columns: 700px 450px;
+    grid-template-areas: "imagem informacoes";
+    column-gap: 50px;
+    margin: 0 40px 0 80px;
+}
+
+.imagem {
+    grid-area: imagem;
+}
+
+.informacoes {
+    grid-area: informacoes;
+}
+
+.informacoes {
+    margin: 55px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacoes .titulo {
+    font-size: 3.5rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.informacoes .sobre {
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    line-height: 150%;
+    margin: 0 0 20px 0;
+}
+
+.informacoes a.botao {
+    align-self: flex-start;
+    padding: 13px 60px;
+    background-color: var(--color-font);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: var(--Violet);
+}
+
+.informacoes a.botao:hover {
+    color: var(--color-font);
+    background-color: var(--Soft-Magenta);
+    transition: 0.5s ease-in-out;
+}
+
+/* --------------------ORGANIZAÇÃO DO RODAPE-------------------- */
+.rodape {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 40px 0 0;
+}
+
+.rodape nav {
+    display: flex;
+    gap: 20px;
+}
+
+.rodape nav a {
+    font-size: 35px;
+    color: var(--color-font);
+}
+
+.rodape nav a:hover {
+    color: var(--Soft-Magenta);
+    transition: 0.5s ease-in-out;
+}
+
+
